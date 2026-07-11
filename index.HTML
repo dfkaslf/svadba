@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105883853', 'ym');
+        ym(105883853, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105883853" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Артем ❤️ Лейсан | Свадьба</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #2d2d2d;
+            background: #f5eff7; /* сиреневый фон */
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.6rem;
+            margin-bottom: 2.5rem;
+            color: #3a1e3a;
+            position: relative;
+        }
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 3px;
+            background: #9b59b6;
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+
+        /* ===== ШАПКА ===== */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 12px rgba(155, 89, 182, 0.08);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #3a1e3a;
+        }
+        .logo i {
+            color: #9b59b6; /* фиолетовое сердечко */
+            font-size: 1.6rem;
+            margin-right: 4px;
+        }
+        .logo span {
+            color: #9b59b6;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            text-decoration: none;
+            color: #3a1e3a;
+            font-weight: 500;
+            font-size: 1rem;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 4px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            border-bottom-color: #9b59b6;
+            color: #9b59b6;
+        }
+        .btn-rsvp-header {
+            background: #9b59b6;
+            color: #fff;
+            padding: 0.6rem 1.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+            border: 2px solid #9b59b6;
+        }
+        .btn-rsvp-header:hover {
+            background: transparent;
+            color: #9b59b6;
+        }
+
+        /* ===== ГЕРОЙ ===== */
+        .hero {
+            background: linear-gradient(rgba(60, 20, 70, 0.4), rgba(60, 20, 70, 0.4)),
+                        url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 6rem 1rem 5rem;
+            margin-bottom: 3rem;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        .hero h1 i {
+            font-size: 3.2rem;
+            color: #b77be0; /* фиолетовое сердечко */
+            margin: 0 6px;
+            vertical-align: middle;
+        }
+        .hero .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+        }
+        .hero .date {
+            font-size: 1.2rem;
+            background: rgba(255,255,255,0.15);
+            display: inline-block;
+            padding: 0.3rem 2rem;
+            border-radius: 50px;
+            backdrop-filter: blur(3px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .hero .btn-rsvp-hero {
+            display: inline-block;
+            margin-top: 2rem;
+            background: #9b59b6; /* фиолетовый */
+            color: #fff;
+            padding: 0.9rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #9b59b6;
+            transition: 0.3s;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+        .hero .btn-rsvp-hero:hover {
+            background: transparent;
+            color: #9b59b6;
+        }
+
+        /* ===== ТАЙМЕР ===== */
+        .countdown-section {
+            background: #ffffff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 20px rgba(155, 89, 182, 0.05);
+        }
+        .countdown-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #3a1e3a;
+        }
+        .countdown-section h2 i {
+            color: #b77be0; /* фиолетовое сердечко */
+            font-size: 2.6rem;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .timer {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .timer-item {
+            text-align: center;
+            background: #f5eff7;
+            padding: 0.8rem 1.8rem;
+            border-radius: 16px;
+            min-width: 90px;
+            border-bottom: 4px solid #9b59b6;
+        }
+        .timer-item .number {
+            font-size: 2.8rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: #3a1e3a;
+        }
+        .timer-item .label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #7d3c98;
+        }
+
+        /* ===== ИСТОРИЯ ===== */
+        .story {
+            padding: 3rem 0;
+            background: #fbf7fc;
+        }
+        .story-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+        }
+        .story-content p {
+            margin-bottom: 1.5rem;
+        }
+        .story-content .highlight {
+            color: #9b59b6;
+            font-weight: 500;
+        }
+        .story-content .big-heart {
+            color: #b77be0; /* фиолетовое сердечко */
+            font-size: 2.4rem;
+            margin: 0 4px;
+        }
+
+        /* ===== РАСПИСАНИЕ ===== */
+        .schedule {
+            padding: 3rem 0;
+            background: #ffffff;
+        }
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .schedule-item {
+            background: #fbf7fc;
+            padding: 1.5rem 1rem;
+            border-radius: 16px;
+            text-align: center;
+            border-left: 5px solid #9b59b6;
+            transition: transform 0.2s;
+        }
+        .schedule-item:hover {
+            transform: translateY(-4px);
+        }
+        .schedule-item .time {
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: #3a1e3a;
+        }
+        .schedule-item .event {
+            font-size: 1rem;
+            color: #5d3d6b;
+            margin-top: 0.3rem;
+        }
+
+        /* ===== ЛОКАЦИЯ ===== */
+        .location {
+            padding: 3rem 0;
+            background: #fbf7fc;
+        }
+        .location-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .location-content h3 {
+            font-size: 2rem;
+            color: #3a1e3a;
+        }
+        .location-content .address {
+            font-size: 1.1rem;
+            color: #5d3d6b;
+            margin: 0.5rem 0 1.5rem;
+        }
+        .location-content .map-wrapper {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+            margin-top: 1rem;
+        }
+        .location-content .map-wrapper iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            display: block;
+        }
+
+        /* ===== Блок "Вместо подарков" ===== */
+        .gift {
+            padding: 3rem 0;
+            background: #ffffff;
+        }
+        .gift-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #444;
+        }
+        .gift-content i {
+            color: #b77be0; /* фиолетовый */
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        /* ===== RSVP ===== */
+        .rsvp {
+            padding: 3rem 0;
+            background: #fbf7fc;
+        }
+        .rsvp-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(155, 89, 182, 0.06);
+        }
+        .rsvp-form label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            color: #3a1e3a;
+        }
+        .rsvp-form input,
+        .rsvp-form select,
+        .rsvp-form textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #d9c6e0;
+            border-radius: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            transition: 0.3s;
+            background: #fff;
+        }
+        .rsvp-form input:focus,
+        .rsvp-form select:focus,
+        .rsvp-form textarea:focus {
+            border-color: #9b59b6;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.15);
+        }
+        .rsvp-form .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .rsvp-form .radio-group {
+            display: flex;
+            gap: 2rem;
+            margin-top: 0.3rem;
+            flex-wrap: wrap;
+        }
+        .rsvp-form .radio-group label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 400;
+        }
+        .rsvp-form .submit-btn {
+            background: #9b59b6;
+            color: #fff;
+            border: none;
+            padding: 0.9rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+        }
+        .rsvp-form .submit-btn:hover {
+            background: #7d3c98;
+        }
+        .rsvp-form .form-success {
+            display: none;
+            color: #27ae60;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        /* ===== ПОДВАЛ ===== */
+        footer {
+            background: #1e0d2c;
+            color: #c9b0d0;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+        footer .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        footer .footer-logo span {
+            color: #9b59b6;
+        }
+        footer .footer-logo i {
+            color: #b77be0; /* фиолетовое сердечко */
+            font-size: 1.8rem;
+            margin: 0 6px;
+        }
+
+        /* ===== АДАПТИВНОСТЬ ===== */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .hero h1 i {
+                font-size: 2.2rem;
+            }
+            .timer {
+                gap: 0.8rem;
+            }
+            .timer-item {
+                min-width: 70px;
+                padding: 0.5rem 1rem;
+            }
+            .timer-item .number {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .header-inner {
+                flex-direction: column;
+            }
+            nav ul {
+                justify-content: center;
+                gap: 1.2rem;
+            }
+            .schedule-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .location-content .map-wrapper iframe {
+                height: 200px;
+            }
+        }
+        @media (max-width: 480px) {
+            .schedule-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .rsvp-form {
+                padding: 1.5rem 1rem;
+            }
+            .location-content .map-wrapper iframe {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header>
+    <div class="container header-inner">
+        <div class="logo">
+            <i class="fas fa-heart"></i> Артем <span>&</span> Лейсан
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#story">Наша история</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#location">Локация</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </nav>
+        <a href="#rsvp" class="btn-rsvp-header">Подтвердить присутствие</a>
+    </div>
+</header>
+
+<!-- ГЕРОЙ -->
+<section class="hero">
+    <div class="container">
+        <h1>
+            <i class="fas fa-heart"></i> Артем &amp; Лейсан <i class="fas fa-heart"></i>
+        </h1>
+        <div class="subtitle">Приглашаем на нашу свадьбу</div>
+        <div class="date">21 августа 2026</div>
+        <a href="#rsvp" class="btn-rsvp-hero">Я буду!</a>
+    </div>
+</section>
+
+<!-- ТАЙМЕР -->
+<section class="countdown-section">
+    <div class="container">
+        <h2><i class="fas fa-heart"></i> ДО НАШЕЙ СВАДЬБЫ ОСТАЛОСЬ</h2>
+        <div class="timer" id="timer">
+            <div class="timer-item">
+                <div class="number" id="days">00</div>
+                <div class="label">Дней</div>
+            </div>
+            <div class="timer-item">
+                <div class="number" id="hours">00</div>
+                <div class="label">Часов</div>
+            </div>
+            <div class="timer-item">
+                <div class="number" id="minutes">00</div>
+                <div class="label">Минут</div>
+            </div>
+            <div class="timer-item">
+                <div class="number" id="seconds">00</div>
+                <div class="label">Секунд</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ИСТОРИЯ (обновлённый текст) -->
+<section class="story" id="story">
+    <div class="container">
+        <h2 class="section-title">Как всё начиналось</h2>
+        <div class="story-content">
+            <p>
+                Мы встретились в <span class="highlight">автошколе</span>. 
+                На одной из перемен Артём подошёл ко мне, протянул шоколадку 
+                и с улыбкой предложил прогуляться. 
+                <span class="big-heart">❤️</span> 
+                С тех пор наши пути стали неразлучны.
+            </p>
+            <p>
+                А спустя время в ресторане <span class="highlight">«Турандот»</span> 
+                Артем сделал мне предложение, и я сказала <strong>«Да»</strong>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- РАСПИСАНИЕ -->
+<section class="schedule" id="schedule">
+    <div class="container">
+        <h2 class="section-title">Программа дня</h2>
+        <div class="schedule-grid">
+            <div class="schedule-item">
+                <div class="time">17:00</div>
+                <div class="event">Сбор гостей</div>
+            </div>
+            <div class="schedule-item">
+                <div class="time">17:30</div>
+                <div class="event">Фуршет</div>
+            </div>
+            <div class="schedule-item">
+                <div class="time">18:00</div>
+                <div class="event">Выездная регистрация</div>
+            </div>
+            <div class="schedule-item">
+                <div class="time">18:30</div>
+                <div class="event">Банкет</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ЛОКАЦИЯ (обновлённый адрес) -->
+<section class="location" id="location">
+    <div class="container">
+        <h2 class="section-title">Место проведения</h2>
+        <div class="location-content">
+            <h3>МОНО ЛЕТО</h3>
+            <p class="address">д. Чемошур, микрорайон Верхний, дом 1/1</p>
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.1234567890123!2d53.123456789012345!3d56.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDA3JzI2LjAiTiA1M8KwMDcnMjYuMCJF!5e0!3m2!1sru!2sru!4v1234567890123" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Блок "Дресс-код" УДАЛЁН -->
+
+<!-- ВМЕСТО ПОДАРКОВ (дополнен) -->
+<section class="gift">
+    <div class="container">
+        <h2 class="section-title">Вместо подарков</h2>
+        <div class="gift-content">
+            <i class="fas fa-gift"></i>
+            <p>
+                Ваше присутствие — лучший подарок для нас. 
+                Если вы захотите нас порадовать, мы будем благодарны 
+                за ваш вклад в нашу копилку на <strong>медовый месяц</strong>.
+            </p>
+            <p style="margin-top: 1rem;">
+                А вместо цветов мы будем рады бутылке хорошего вина. 🍷
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- RSVP (без поля email) -->
+<section class="rsvp" id="rsvp">
+    <div class="container">
+        <h2 class="section-title">Ждём вас ✨</h2>
+        <div class="rsvp-form">
+            <form action="https://formspree.io/f/xkgdllwj" method="POST" id="rsvpForm">
+                <input type="hidden" name="_subject" value="RSVP на свадьбу Артема и Лейсан" />
+
+                <div class="form-group">
+                    <label for="name">Ваше имя и фамилия *</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <!-- Поле email УДАЛЕНО -->
+                <div class="form-group">
+                    <label>Присутствие *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="attendance" value="Буду" checked /> Буду</label>
+                        <label><input type="radio" name="attendance" value="Не буду" /> Не буду</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Пожелания, вопросы или диетические предпочтения</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <input type="text" name="_gotcha" style="display:none" />
+
+                <button type="submit" class="submit-btn">Отправить ответ</button>
+                <div id="formSuccess" class="form-success">✅ Спасибо! Ваш ответ отправлен.</div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ПОДВАЛ -->
+<footer>
+    <div class="container">
+        <div class="footer-logo">
+            <i class="fas fa-heart"></i> Артем <span>&</span> Лейсан <i class="fas fa-heart"></i>
+        </div>
+        <p>21 августа 2026</p>
+    </div>
+</footer>
+
+<script>
+    // === ТАЙМЕР (21 августа 2026, 17:00) ===
+    (function() {
+        const targetDate = new Date('2026-08-21T17:00:00').getTime();
+
+        function updateTimer() {
+            const now = Date.now();
+            const diff = targetDate - now;
+
+            if (diff <= 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    })();
+
+    // === ОБРАБОТКА ФОРМЫ ===
+    const form = document.getElementById('rsvpForm');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            setTimeout(function() {
+                document.getElementById('formSuccess').style.display = 'block';
+                form.reset();
+                setTimeout(function() {
+                    document.getElementById('formSuccess').style.display = 'none';
+                }, 5000);
+            }, 1000);
+        });
+    }
+</script>
+
+</body>
+</html>
